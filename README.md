@@ -109,23 +109,23 @@ Identifies and removes rows that are exact duplicates across all columns.
 ### 4. Intelligent Null Handling
 - Analyzes percentage of rows with null values
 - **If <20%**: Removes rows with any null values (data quality priority)
-- **If ≥20%**: Preserves rows (prevents excessive data loss)
+- **If ≥20%**: Preserves rows (prevents excessive data loss and allows you use your best methods for handling outliers whether imputation, IQR or what you best desire)
 
 ## Use Cases
 
-### 📊 Data Analysis
+### Data Analysis
 Clean messy datasets before feeding them into analysis tools, BI platforms, or ML models.
 
-### 🔄 ETL Pipelines
+### ETL Pipelines
 Integrate as a preprocessing step in your data pipeline to ensure consistent data quality.
 
-### 📁 Data Migration
+### Data Migration
 Standardize data before migrating between systems or databases.
 
-### 🤝 Team Collaboration
+### Team Collaboration
 Ensure all team members work with consistently formatted data.
 
-### 📈 Reporting
+### Reporting
 Prepare clean data for accurate reports and dashboards.
 
 ## Real-World Impact
@@ -161,7 +161,7 @@ if numeric_col.notna().sum() / len(df) > 0.9:  # Stricter conversion
 
 ## Best Practices
 
-1. **Always keep a backup** of your original data
+1. **Always keep a backup** of your original data (I shouldn't need to be telling you that)
 2. **Review the output** of your first few runs to ensure expected behavior
 3. **Check column names** in the output to verify datatype conversions
 4. **Adjust thresholds** if needed for your specific use case
@@ -169,10 +169,9 @@ if numeric_col.notna().sum() / len(df) > 0.9:  # Stricter conversion
 
 ## Limitations
 
-- Assumes CSV files are UTF-8 encoded
 - Datatype detection requires >80% valid values in a column
-- Text standardization applies title case (may not suit all use cases)
-- Does not handle complex nested data structures
+- Text standardization applies title case (may not suit all use cases, you can edit it where you see fit)
+- Does not handle complex nested data structures (I always welcome developments to the script)
 
 ## Contributing
 
@@ -180,14 +179,12 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 ## License
 
-MIT License - feel free to use this in your projects!
+Feel free to use this in your projects!
 
 ## Support
 
 If you encounter any issues or have questions:
-- Open an issue on GitHub
-- Check existing issues for solutions
-- Review the code comments for implementation details
+- Open an issue on GitHub or reach out to me @ naanlongb@gmail.com
 
 ## Acknowledgments
 
@@ -195,4 +192,4 @@ Built with Python and pandas to help data professionals focus on insights, not d
 
 ---
 
-**⭐ Star this repo if it saved you time!**
+**⭐ Star this repo if you see fit**
