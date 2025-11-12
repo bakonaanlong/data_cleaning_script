@@ -1,7 +1,9 @@
 # data_cleaning_script
 
 This is a powerful Python script that automates CSV data cleaning and standardization, saving hours of manual data preparation work.
-
+---
+I added a dirty dataset you can use to test this script
+---
 ## Why This Matters
 
 Dirty data costs organizations an average of **$15 million annually** in operational inefficiencies. Data scientists spend up to **80% of their time** on data cleaning rather than actual analysis or model training. This script automates the most common data cleaning tasks, allowing you to:
