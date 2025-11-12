@@ -3,6 +3,7 @@
 This is a powerful Python script that automates CSV data cleaning and standardization, saving hours of manual data preparation work.
 
 ---
+![pic](https://github.com/bakonaanlong/data_cleaning_script/blob/main/script.PNG)
 I added a dirty dataset you can use to test this script. Tweak and test however you like.
 
 ---
